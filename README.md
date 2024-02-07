@@ -1,8 +1,8 @@
 # Frontend Mentor - Social links profile
 
-This one was pretty straight fowrard challenge. I used CSS Grid and Flexbox to get the layout I needed. 
+This one was pretty straight forward challenge. I used CSS Grid and Flexbox to get the layout I needed. 
 
-The only bit I found a bit tricky was the image but after a few YT tutorials I managed to get the desired effect. 
+The only bit I found tricky was the image but after a few YT tutorials I managed to get the desired effect. 
 
 I worked off the JPEG image that was provided with this challenge and used rem units. 
 
