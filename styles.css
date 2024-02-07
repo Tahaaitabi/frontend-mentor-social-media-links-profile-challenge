@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --grey:  hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    /* Fonts */
+    --fs-title: 1.2rem;
+    --fs-normal: .875rem;
+    --fs-small: .7rem;
+}
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    font-size: var(--fs-normal);
+    font-family: 'Inter', sans-serif;
+}
+article {
+    background-color: var(--off-black);
+    min-height: 100vh;
+}
+/* Utilities */
+.grid {
+    display: grid;
+    place-content: center;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+/* SM Card */
+.sm-wrapper {
+    margin-block: 5rem;
+    padding: 2rem;
+    background-color: var(--dark-grey);
+    border-radius: .7rem;
+    color: var(--white);
+}
+.sm-wrapper img {
+    border-radius: 50%;
+    max-width: 4.5rem;
+    margin-block-end: .2rem;
+}
+.sm-wrapper p {
+    font-size: var(--fs-small);
+
+}
+.name-location {
+    gap: .4rem;
+    margin-block-end: .5rem;
+}
+.name-location h1 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: var(--fs-title);
+    margin-block-start: .5rem;
+}
+.name-location p {
+    color: var(--green);
+    font-weight: 600;
+    margin-block-end: .5rem;
+
+}
+.sm-links {
+    gap: .8rem;
+}
+.skill {
+    margin-block-end: 1rem;
+}
+.sm-links a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey);
+    padding: .7rem 5rem;
+    text-align: center;
+    border-radius: .5rem;
+    font-weight: 600;
+    font-size: var(--fs-small);
+    transition: all .2s ease-out;
+}
+.sm-links a:hover {
+    font-weight: 600;
+    background-color: var(--green);
+    color: var(--grey);
+    transition: all .2s ease-in;
+}
+/* Media Queries */
+@media (max-width: 30rem) {
+    .sm-wrapper {
+        margin-block: 5rem;
+        margin-inline: 1rem;
+        padding: 1rem 1.5rem;
+        background-color: var(--dark-grey);
+        border-radius: .7rem;
+        color: var(--white);
+    }
+    .sm-links a{
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--grey);
+        padding: .7rem 4rem;
+        text-align: center;
+        border-radius: .5rem;
+        font-weight: 600;
+        font-size: var(--fs-small);
+        transition: all .2s ease-out;
+    }
+    .sm-wrapper img {
+        border-radius: 50%;
+        max-width: 4.5rem;
+        margin-block-end: .2rem;
+    }
+}
